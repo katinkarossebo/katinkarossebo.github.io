@@ -3,99 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Katta maler</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  <title>Katta maler – Katinka Rossebø</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
+      font-family: 'Raleway', sans-serif;
       margin: 0;
       padding: 0;
-      font-family: 'Raleway', sans-serif;
-      background-color: #2c2c2c;
-      color: #f7f3f0;
+      background: #fefefe;
+      color: #333;
     }
-
     header {
-      text-align: center;
-      padding: 4rem 1rem 1rem;
-      font-family: 'Playfair Display', serif;
+      background-color: #f2e9e4;
+      padding: 2rem 1rem;
     }
-
     header h1 {
-      font-size: 3rem;
       margin: 0;
+      font-size: 2rem;
     }
-
-    header p {
-      font-style: italic;
-      margin-top: 0.5rem;
-      color: #c9bbb2;
-    }
-
     nav {
       display: flex;
       justify-content: center;
-      gap: 2rem;
-      padding: 1rem 0;
-      background-color: #1f1f1f;
-      border-top: 1px solid #444;
-      border-bottom: 1px solid #444;
+      gap: 1.5rem;
+      padding: 1rem;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
       flex-wrap: wrap;
     }
-
     nav a {
       text-decoration: none;
-      color: #f7f3f0;
+      color: #444;
       font-weight: 600;
-      transition: color 0.3s ease;
+      transition: color 0.2s ease;
     }
-
     nav a:hover {
-      color: #e6d6c7;
+      color: #a26769;
     }
-
     main {
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
       padding: 2rem;
-      text-align: center;
     }
-
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
     }
-
     .gallery img {
       width: 100%;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
-
     footer {
+      margin-top: 4rem;
+      padding: 2rem 1rem;
+      background: #f2e9e4;
       text-align: center;
-      padding: 2rem;
       font-size: 0.9rem;
-      color: #aaa;
+      color: #555;
     }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      nav {
-        flex-direction: column;
-        gap: 1rem;
-      }
+    footer img {
+      width: 24px;
+      vertical-align: middle;
+      margin: 0 8px;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Katta maler</h1>
-    <p>Katinka Rossebø</p>
   </header>
 
   <nav>
@@ -106,7 +83,7 @@
   </nav>
 
   <main>
-    <p>Hei og velkommen til min digitale portefølje! Jeg eksperimenterer med maling, tegning og trykk🐾</p>
+    <p>Velkommen! Jeg heter Katinka og jeg liker blant annet å male. På denne siden deler jeg noe av det jeg lager. Sjekk ut arbeidet mitt her og på instagram.</p>
     
     <div class="gallery">
       <img src="assets/img/tegning1.jpg" alt="Tegning 1">
@@ -115,7 +92,15 @@
   </main>
 
   <footer>
-    © Katinka Rossebø · 2025
+    <div>
+      <a href="https://www.instagram.com/kattamaler" target="_blank">
+        <img src="assets/img/instagram-icon.svg" alt="Instagram">
+      </a>
+      <a href="mailto:katinka.rossebo@gmail.com">
+        <img src="assets/img/email-icon.svg" alt="E-post">
+      </a>
+    </div>
+    <div style="margin-top: 1rem;">© Katinka Rossebø · 2025</div>
   </footer>
 </body>
 </html>
