@@ -3,24 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galleri – Katinka Rossebø</title>
+  <title>Portefølje</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Raleway', sans-serif; margin: 0; padding: 0; background: #fefefe; color: #333; }
-    header { background-color: #f2e9e4; padding: 2rem 1rem; text-align: center; }
-    nav { display: flex; justify-content: center; gap: 1.5rem; padding: 1rem; background-color: #fff; border-bottom: 1px solid #ddd; flex-wrap: wrap; }
-    nav a { text-decoration: none; color: #444; font-weight: 600; transition: color 0.2s ease; }
-    nav a:hover { color: #a26769; }
-    main { max-width: 1000px; margin: auto; padding: 2rem; }
-    h2 { margin-top: 2rem; color: #444; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1rem; }
-    .gallery img { width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    body {
+      font-family: 'Raleway', sans-serif;
+      margin: 0; padding: 0;
+      background: #fefefe; color: #333;
+      line-height: 1.6;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+    nav a {
+      text-decoration: none;
+      color: #444;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #a26769;
+    }
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      padding: 2rem 1rem 1rem;
+      color: #777;
+      font-size: 0.9rem;
+    }
+    .social-icons img {
+      width: 24px;
+      margin: 0 0.5rem;
+      vertical-align: middle;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Galleri</h1>
-  </header>
   <nav>
     <a href="index.html">Hjem</a>
     <a href="about.html">Om meg</a>
@@ -28,15 +55,26 @@
     <a href="galleri.html">Galleri</a>
   </nav>
   <main>
-    <h2>Tegninger</h2>
-    <div class="gallery">
-      <img src="assets/img/tegning1.jpg" alt="Tegning 1">
-    </div>
+  <h1>Galleri</h1>
+  
+  <h2>Maling</h2>
+  <div class="gallery">
+    <img src="assets/img/tegning1.jpg" alt="Tegning 1">
+    <img src="assets/img/tegning2.jpg" alt="Tegning 2">
+  </div>
 
-    <h2>Maling</h2>
-    <div class="gallery">
-      <img src="assets/img/maleri1.jpg" alt="Maleri 1">
+  <h2>Tegning</h2>
+  <div class="gallery">
+    <img src="assets/img/maleri1.jpg" alt="Maleri 1">
+    <img src="assets/img/maleri2.jpg" alt="Maleri 2">
+  </div>
+</main>
+  <footer>
+    <div class="social-icons">
+      <a href="https://instagram.com/dinbruker" target="_blank"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+      <a href="mailto:katinka.rossebo@gmail.com"><img src="assets/icons/mail.svg" alt="E-post"></a>
     </div>
-  </main>
+    © Katinka Rossebø · 2025
+  </footer>
 </body>
 </html>
