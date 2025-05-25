@@ -2,37 +2,106 @@
 <html lang="no">
 <head>
   <meta charset="UTF-8">
-  <title>Katta maler - Katinka Rossebø</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katta maler – Katinka Rossebø</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
-      background: #f9f9f9;
-    }
-    h1 {
-      text-align: center;
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fefefe;
       color: #333;
     }
+
+    header {
+      background-color: #f2e9e4;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 2px solid #ccc;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #222;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #444;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #a26769;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1rem;
-      margin-top: 2rem;
     }
+
     .gallery img {
       width: 100%;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Katta maler</h1>
+    <p>Av Katinka Rossebø</p>
+  </header>
+
   <nav>
     <a href="index.html">Hjem</a>
     <a href="about.html">Om meg</a>
     <a href="kontakt.html">Kontakt</a>
     <a href="galleri.html">Galleri</a>
+  </nav>
+
+  <main>
+    <div class="intro">
+      <h2>Velkommen</h2>
+      <p>Jeg er Katinka, en kunstner som jobber med både tegning og maleri. Her kan du utforske noe av arbeidet mitt!</p>
+    </div>
+
+    <div class="gallery">
+      <img src="assets/img/tegning1.jpg" alt="Tegning 1">
+      <img src="assets/img/maleri1.jpg" alt="Maleri 1">
+    </div>
+  </main>
 </body>
 </html>
